@@ -1,0 +1,6 @@
+@use '../abstract/variaveis' as *;
+@use '../abstract/mixins' as *;
+
+header {
+    background-color: $background-color;
+}
