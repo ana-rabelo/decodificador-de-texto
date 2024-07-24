@@ -13,28 +13,36 @@
 </head>
 <body>
 
-    <header>
-        <img src="./assets/images/logo-alura.svg" alt="">
+    <header class="header">
+        <img class="header__img-logo" src="./assets/images/logo-alura.svg" alt="Logo da Alura">
     </header>
 
-    <section>
+    <section class="s-textarea">
         <div>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <p><img src="./assets/images/icon-exclamação.svg" alt=""> Apenas letras minúsculas e sem acento.</p>
-            <div>
-                <button>Criptografar</button>
-                <button>Descriptografar</button>
+            <textarea class="s-textarea__area" name="" id="" cols="30" rows="10"></textarea>
+            <p class="s-textarea__info">
+                <img class="s-textarea__info__img" src="./assets/images/icon-exclamação.svg" alt="Ícone de sinal de exclamação"> 
+                Apenas letras minúsculas e sem acento.
+            </p>
+            <div class="s-textarea__buttons">
+                <button class="button__encrypt">Criptografar</button>
+                <button class="button__decrypt">Descriptografar</button>
             </div>
         </div>
     </section>
 
-    <section>
-        <div>
-            <p>Nenhuma mensagem encontrada</p>
-            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-            <button>Copiar</button> 
+    <section class="s-message">
+        <div class="s-message__text">
+            <p class="text__main-text">Nenhuma mensagem encontrada</p>
+            <p class="text__sec-text">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button class="text__btn">Copiar</button> 
         </div>
     </section>
     
+    <footer>
+        <p class="footer__text">&#174; 2024 Desenvolvido por 
+            <a class="footer__link" href="">ana-rabelo</a>
+        </p>
+    </footer>
 </body>
 </html>
