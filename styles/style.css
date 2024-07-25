@@ -56,6 +56,10 @@ table {
   border-spacing: 0;
 }
 
+.hidden {
+  display: none !important;
+}
+
 header {
   background-color: #F3F5FC;
   padding: 1rem 1rem;
@@ -124,6 +128,7 @@ header {
   gap: 1rem;
 }
 .s-textarea__buttons .button__encrypt, .s-textarea__buttons .button__decrypt {
+  cursor: pointer;
   border-radius: 24px;
   padding: 18px;
   background-color: #0A3871;
@@ -205,6 +210,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  justify-content: space-between;
 }
 .c-message__text img {
   display: none;
@@ -214,15 +220,20 @@ header {
   font-size: 1.3rem;
   font-weight: 700;
   color: #343A40;
+  line-break: strict;
+  word-break: break-word;
 }
 .c-message__text .text__sec-text {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #343A40;
+  margin-bottom: 10rem;
 }
 .c-message__text .text__btn {
+  cursor: pointer;
   border-radius: 24px;
+  margin-top: 10rem;
   padding: 18px;
   background-color: transparent;
   border: #0A3871 1px solid;
@@ -230,19 +241,19 @@ header {
   font-size: 1rem;
   font-weight: 300;
   color: #0A3871;
-  display: none;
 }
 
 @media screen and (min-width: 1008px) {
   .c-message {
-    height: 100vh;
-    max-height: 100vh;
+    width: 400px;
     padding: 3rem 2rem;
   }
   .c-message__text {
-    padding: 10rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+    min-height: 576px;
   }
   .c-message__text img {
+    padding-top: 8rem;
     display: block;
   }
 }

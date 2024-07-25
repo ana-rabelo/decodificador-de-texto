@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <script defer src="./js/app.js"></script>
-    <link rel="icon" href="icon-alura.png">
+    <script type="module" src="./js/app.js"></script>
+    <link rel="icon" href="./assets/images/icon-alura.svg">
     <title>Decodificador de texto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,14 +32,14 @@
             </div>
         </section>
 
-        <section class="c-message">
+        <aside class="c-message">
             <div class="c-message__text">
-                <img src="./assets/images/img-campo-apresentação.svg" alt="">
+                <img class="text__img" src="./assets/images/img-campo-apresentação.svg" alt="Imagem de apresentação">
                 <p class="text__main-text">Nenhuma mensagem encontrada</p>
                 <p class="text__sec-text">Digite um texto que você deseja criptografar ou descriptografar.</p>
-                <button class="text__btn">Copiar</button> 
+                <button class="text__btn hidden">Copiar</button>   
             </div>
-        </section>
+        </aside>
     </div>  
     
     <footer>
