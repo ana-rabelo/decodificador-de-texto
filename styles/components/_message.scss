@@ -8,7 +8,7 @@
     &__text{
         background-color: $cor-secundaria;
         border-radius: 32px;
-        padding: 2rem;
+        padding: 2rem 1rem;
         box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
@@ -18,13 +18,12 @@
             display: none
         }
         .text__main-text {
-            @include mixins.ff-fs-fw-cl($ft-principal, 1.3rem, 700, $cor-terciaria);
+            @include mixins.ff-fs-fw-cl($ft-principal, 1.5rem, 700, $cor-terciaria);
             line-break: strict;
             word-break: break-word;
         }
         .text__sec-text {
-            @include mixins.ff-fs-fw-cl($ft-principal, 1rem, 400, $cor-terciaria);
-            margin-bottom: 10rem;
+            @include mixins.ff-fs-fw-cl($ft-principal, 1.2rem, 400, $cor-terciaria);
         }
         .text__btn {
             cursor: pointer;
@@ -42,6 +41,9 @@
     .c-message{
         width: 400px;
         padding: 3rem 2rem;
+        .text__sec-text{
+            margin-bottom: 10rem;
+        }
         &__text{
             padding: 2rem 2rem 2rem 2rem;
             min-height: 576px;
