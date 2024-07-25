@@ -1,0 +1,19 @@
+@use '../abstract/variaveis' as *;
+@use '../abstract/mixins';
+
+footer {
+    background-color: $background-color;
+    padding: 1.5rem 1.5rem;
+    text-align: center;
+    margin-top: auto;
+    .footer__text {
+        @include mixins.ff-fs-fw-cl($ft-principal, .8rem, 400, $cor-terciaria);
+        a{
+            color: $cor-primaria;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
