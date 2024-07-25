@@ -68,3 +68,29 @@
         }
     }  
 }
+
+@media screen and (min-width: 1008px) {
+    .group-desktop{
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        gap: 50px;
+        .s-textarea{
+            text-align: left;
+            padding-top: 10rem;
+            &__area{
+                @include mixins.ff-fs-fw-cl($ft-principal, 2rem, 400, $cor-primaria);
+                width: 100%;
+                height: calc(100% - 20rem);
+                &::placeholder{
+                    @include mixins.ff-fs-fw-cl($ft-principal, 2rem, 400, $cor-primaria);
+                }
+            }
+            &__info{
+                margin: 0 0 2rem 0;
+            }
+            &__buttons{
+                margin: 0;
+            }
+        }  
+    }
+}

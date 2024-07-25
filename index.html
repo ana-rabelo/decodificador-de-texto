@@ -13,31 +13,34 @@
 </head>
 <body>
 
-    <header class="header">
-        <img class="header__img-logo" src="./assets/images/icon-alura.svg" alt="Logo da Alura">
-    </header>
+    <div class="group-desktop">
+        <header class="header">
+            <img class="header__img-logo" src="./assets/images/icon-alura.svg" alt="Logo da Alura">
+        </header>
 
-    <section class="s-textarea">
-        <textarea class="s-textarea__area" name="encode" id="encode" 
-            rows="8" placeholder="Digite seu texto"
-            oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
-        <p class="s-textarea__info">
-            <img class="s-textarea__info__img" src="./assets/images/icon-exclamação.svg" alt="Ícone de sinal de exclamação"> 
-            Apenas letras minúsculas e sem acento.
-        </p>
-        <div class="s-textarea__buttons">
-            <button class="button__encrypt">Criptografar</button>
-            <button class="button__decrypt">Descriptografar</button>
-        </div>
-    </section>
+        <section class="s-textarea">
+            <textarea class="s-textarea__area" name="encode" id="encode" 
+                rows="8" placeholder="digite seu texto"
+                oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+            <p class="s-textarea__info">
+                <img class="s-textarea__info__img" src="./assets/images/icon-exclamação.svg" alt="Ícone de sinal de exclamação"> 
+                Apenas letras minúsculas e sem acento.
+            </p>
+            <div class="s-textarea__buttons">
+                <button class="button__encrypt">Criptografar</button>
+                <button class="button__decrypt">Descriptografar</button>
+            </div>
+        </section>
 
-    <section class="c-message">
-        <div class="c-message__text">
-            <p class="text__main-text">Nenhuma mensagem encontrada</p>
-            <p class="text__sec-text">Digite um texto que você deseja criptografar ou descriptografar.</p>
-            <button class="text__btn">Copiar</button> 
-        </div>
-    </section>
+        <section class="c-message">
+            <div class="c-message__text">
+                <img src="./assets/images/img-campo-apresentação.svg" alt="">
+                <p class="text__main-text">Nenhuma mensagem encontrada</p>
+                <p class="text__sec-text">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button class="text__btn">Copiar</button> 
+            </div>
+        </section>
+    </div>  
     
     <footer>
         <p class="footer__text">&#174; 2024 Desenvolvido por 
