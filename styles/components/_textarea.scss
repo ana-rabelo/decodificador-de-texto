@@ -10,6 +10,9 @@
         background-color: $background-color;
         resize: none;
         border: none;
+        width: calc(100% - 2rem); 
+        height: calc(100% - 2rem);
+
         &::placeholder{
             @include mixins.ff-fs-fw-cl($ft-principal, 1.5rem, 400, $cor-primaria);
         }
@@ -20,7 +23,7 @@
     }
     &__info{
         @include mixins.ff-fs-fw-cl($ft-principal, .8rem, 400, $cor-terciaria);
-        margin: 2rem 2rem 1rem 2rem;
+        margin: 1rem 2rem 1rem 1rem;
         text-align: left;
         img {
             vertical-align: text-top;
@@ -29,7 +32,7 @@
     &__buttons{
         display: flex;
         flex-direction: column;
-        margin: 0 2rem;
+        margin: 0 1rem;
         gap: 1rem;
         .button__encrypt {
             border-radius: 24px;
@@ -44,5 +47,24 @@
             color: $cor-primaria;
         }
     }
+}
 
+@media screen and (min-width: 768px) {
+    .s-textarea{
+        &__area{
+            width: calc(100% - 5rem); 
+            height: calc(100% - 5rem);
+        }
+        &__info{
+            margin: 2rem 5rem 2rem 2rem;
+        }
+        &__buttons{
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 2rem;
+            .button__encrypt, .button__decrypt {
+                flex-grow: 1;
+            }
+        }
+    }  
 }

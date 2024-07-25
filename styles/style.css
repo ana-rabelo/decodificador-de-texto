@@ -31,6 +31,10 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #F3F5FC;
 }
 
 ol, ul {
@@ -54,9 +58,14 @@ table {
 
 header {
   background-color: #F3F5FC;
-  padding: 1.5rem 1.5rem;
+  padding: 1rem 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    padding: 4rem 2.5rem;
+  }
+}
 .s-textarea {
   background-color: #F3F5FC;
   text-align: center;
@@ -69,6 +78,8 @@ header {
   background-color: #F3F5FC;
   resize: none;
   border: none;
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
 }
 .s-textarea__area::-moz-placeholder {
   font-family: "Inter", sans-serif;
@@ -95,7 +106,7 @@ header {
   font-size: 0.8rem;
   font-weight: 400;
   color: #343A40;
-  margin: 2rem 2rem 1rem 2rem;
+  margin: 1rem 2rem 1rem 1rem;
   text-align: left;
 }
 .s-textarea__info img {
@@ -104,7 +115,7 @@ header {
 .s-textarea__buttons {
   display: flex;
   flex-direction: column;
-  margin: 0 2rem;
+  margin: 0 1rem;
   gap: 1rem;
 }
 .s-textarea__buttons .button__encrypt, .s-textarea__buttons .button__decrypt {
@@ -120,4 +131,79 @@ header {
 .s-textarea__buttons .button__decrypt {
   background-color: transparent;
   color: #0A3871;
+}
+
+@media screen and (min-width: 768px) {
+  .s-textarea__area {
+    width: calc(100% - 5rem);
+    height: calc(100% - 5rem);
+  }
+  .s-textarea__info {
+    margin: 2rem 5rem 2rem 2rem;
+  }
+  .s-textarea__buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 2rem;
+  }
+  .s-textarea__buttons .button__encrypt, .s-textarea__buttons .button__decrypt {
+    flex-grow: 1;
+  }
+}
+.c-message {
+  padding: 3rem 1rem;
+  background-color: #F3F5FC;
+  text-align: center;
+}
+.c-message__text {
+  background-color: #FFFFFF;
+  border-radius: 32px;
+  padding: 2rem;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.c-message__text .text__main-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #343A40;
+}
+.c-message__text .text__sec-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #343A40;
+}
+.c-message__text .text__btn {
+  border-radius: 24px;
+  padding: 18px;
+  background-color: transparent;
+  border: #0A3871 1px solid;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #0A3871;
+  display: none;
+}
+
+footer {
+  background-color: #F3F5FC;
+  padding: 1.5rem 1.5rem;
+  text-align: center;
+  margin-top: auto;
+}
+footer .footer__text {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #343A40;
+}
+footer .footer__text a {
+  color: #0A3871;
+  text-decoration: none;
+}
+footer .footer__text a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
