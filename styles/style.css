@@ -54,4 +54,70 @@ table {
 
 header {
   background-color: #F3F5FC;
+  padding: 1.5rem 1.5rem;
+}
+
+.s-textarea {
+  background-color: #F3F5FC;
+  text-align: center;
+}
+.s-textarea__area {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #0A3871;
+  background-color: #F3F5FC;
+  resize: none;
+  border: none;
+}
+.s-textarea__area::-moz-placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #0A3871;
+}
+.s-textarea__area::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #0A3871;
+}
+.s-textarea__area::-moz-selection {
+  background-color: #609ED4;
+  color: #FFFFFF;
+}
+.s-textarea__area::selection {
+  background-color: #609ED4;
+  color: #FFFFFF;
+}
+.s-textarea__info {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #343A40;
+  margin: 2rem 2rem 1rem 2rem;
+  text-align: left;
+}
+.s-textarea__info img {
+  vertical-align: text-top;
+}
+.s-textarea__buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+  gap: 1rem;
+}
+.s-textarea__buttons .button__encrypt, .s-textarea__buttons .button__decrypt {
+  border-radius: 24px;
+  padding: 18px;
+  background-color: #0A3871;
+  border: #0A3871 1px solid;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+.s-textarea__buttons .button__decrypt {
+  background-color: transparent;
+  color: #0A3871;
 }/*# sourceMappingURL=style.css.map */

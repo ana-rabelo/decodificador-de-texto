@@ -1,0 +1,48 @@
+@use '../abstract/variaveis' as *;
+@use '../abstract/mixins';
+
+.s-textarea {
+    background-color: $background-color;
+    text-align: center;
+    
+    &__area{
+        @include mixins.ff-fs-fw-cl($ft-principal, 1.5rem, 400, $cor-primaria);
+        background-color: $background-color;
+        resize: none;
+        border: none;
+        &::placeholder{
+            @include mixins.ff-fs-fw-cl($ft-principal, 1.5rem, 400, $cor-primaria);
+        }
+        &::selection{
+            background-color: $cor-quaternaria;
+            color: $cor-secundaria
+        }
+    }
+    &__info{
+        @include mixins.ff-fs-fw-cl($ft-principal, .8rem, 400, $cor-terciaria);
+        margin: 2rem 2rem 1rem 2rem;
+        text-align: left;
+        img {
+            vertical-align: text-top;
+        }
+    }
+    &__buttons{
+        display: flex;
+        flex-direction: column;
+        margin: 0 2rem;
+        gap: 1rem;
+        .button__encrypt {
+            border-radius: 24px;
+            padding: 18px;
+            background-color: $cor-primaria;
+            border: $cor-primaria 1px solid;
+            @include mixins.ff-fs-fw-cl($ft-principal, 1rem, 300, $cor-secundaria);
+        }
+        .button__decrypt {
+            @extend .button__encrypt;
+            background-color: transparent;
+            color: $cor-primaria;
+        }
+    }
+
+}
