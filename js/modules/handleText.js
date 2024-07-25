@@ -17,9 +17,11 @@ export function handleText(action) {
     * @param {string} action - The action to be performed (encode or decode)
     * @returns {void} 
     */
+
    
-    const text = document.querySelector(".s-textarea__area").value;
-    const mainText = document.querySelector(".text__main-text");
+   const text = document.querySelector(".s-textarea__area").value;
+   const mainText = document.querySelector(".text__main-text");
+   document.querySelector(".text__btn").textContent = "Copiar";
 
     let reg = /^[a-z 0-9]+$/;
     if (reg.test(text)) {

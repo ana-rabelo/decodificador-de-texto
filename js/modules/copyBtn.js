@@ -4,5 +4,5 @@ export function copyText(){
     const text = document.querySelector(".text__main-text");
     navigator.clipboard.writeText(text.textContent);
 
-    document.querySelector(".text__btn").textContent = "Copied!";
+    document.querySelector(".text__btn").textContent = "Copiado!";
 }
